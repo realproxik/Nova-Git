@@ -1,0 +1,43 @@
+name: Build and verify
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Windows build
+    runs-on: windows-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore NovaGit.csproj
+
+      - name: Build release app
+        run: dotnet build NovaGit.csproj --configuration Release --no-restore
+
+      - name: Check vulnerable dependencies
+        run: dotnet list NovaGit.csproj package --vulnerable --include-transitive
+
+      - name: Publish Windows artifact
+        run: dotnet publish NovaGit.csproj --configuration Release --no-restore --runtime win-x64 --self-contained false --output publish
+
+      - name: Upload Windows app
+        uses: actions/upload-artifact@v4
+        with:
+          name: NovaGit-win-x64
+          path: publish/
+          retention-days: 14

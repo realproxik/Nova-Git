@@ -1,0 +1,9 @@
+NovaGit installation rules
+
+1. Install NovaGit only on a computer you are allowed to use.
+2. Git operations can change repository history and remote repositories.
+   Review commands such as merge, pull, push, reset, and delete before use.
+3. Keep backups of important repositories before performing destructive work.
+4. Do not share OAuth tokens, passwords, or private repository URLs.
+5. By continuing, you agree to use NovaGit responsibly and comply with the
+   licenses of Git, .NET, and any services you connect to.

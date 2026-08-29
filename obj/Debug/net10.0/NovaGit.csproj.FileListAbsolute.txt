@@ -1,0 +1,14 @@
+C:\Users\DeLL\Desktop\Nova Git\bin\Debug\net10.0\NovaGit.exe
+C:\Users\DeLL\Desktop\Nova Git\bin\Debug\net10.0\NovaGit.deps.json
+C:\Users\DeLL\Desktop\Nova Git\bin\Debug\net10.0\NovaGit.runtimeconfig.json
+C:\Users\DeLL\Desktop\Nova Git\bin\Debug\net10.0\NovaGit.dll
+C:\Users\DeLL\Desktop\Nova Git\bin\Debug\net10.0\NovaGit.pdb
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\NovaGit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\NovaGit.AssemblyInfoInputs.cache
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\NovaGit.AssemblyInfo.cs
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\NovaGit.csproj.CoreCompileInputs.cache
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\NovaGit.dll
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\refint\NovaGit.dll
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\NovaGit.pdb
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\NovaGit.genruntimeconfig.cache
+C:\Users\DeLL\Desktop\Nova Git\obj\Debug\net10.0\ref\NovaGit.dll
