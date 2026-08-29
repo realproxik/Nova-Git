@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NovaGit — a modern Git desktop client and developer workspace.">
+  <title>NovaGit · Source control, clearly</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="NovaGit home"><span class="brand-mark">N</span><span>NovaGit</span></a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#tips">Tips</a><a href="#faq">FAQ</a><a href="#download">Download</a></nav>
+    <div class="header-actions"><button class="icon-button" id="theme-toggle" aria-label="Toggle colour theme">◐</button><a class="sign-in" href="#signin">Sign in</a><a class="button compact" href="#download">Get NovaGit</a></div>
+  </header>
+
+  <main id="home">
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">A clearer way to work with Git</p>
+        <h1>Version control,<br><em>without the noise.</em></h1>
+        <p class="lead">NovaGit brings repositories, source, diffs, remotes, and Git objects into one fast desktop workflow.</p>
+        <div class="hero-actions"><a class="button" href="#download">Download for Windows <span>→</span></a><a class="text-link" href="#product">See how it works <span>↓</span></a></div>
+        <p class="platform-note">Built for Windows · Powered by Git</p>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"><span class="node node-a"></span><span class="node node-b"></span><span class="node node-c"></span><span class="orbit-line line-a"></span><span class="orbit-line line-b"></span><span class="orbit-line line-c"></span><div class="core">N</div></div>
+    </section>
+
+    <section class="workspace reveal" id="product" aria-label="NovaGit repository preview">
+      <div class="window-bar"><div class="traffic"><i></i><i></i><i></i></div><span>novagit / NovaGit</span><span class="window-status">main · synced</span></div>
+      <div class="app-shell">
+        <aside class="sidebar"><div class="repo-title"><span class="repo-icon">◆</span><strong>NovaGit</strong><span class="chevron">⌄</span></div><button class="new-button">＋ New</button><p class="side-label">WORKSPACE</p><button class="side-item active" data-panel="files">⌘ Files <b>6</b></button><button class="side-item" data-panel="changes">◌ Changes <b>2</b></button><button class="side-item" data-panel="commits">◫ Commits</button><p class="side-label">REPOSITORY</p><button class="side-item">⌥ Branches</button><button class="side-item">◇ Remotes</button><button class="side-item">◈ Objects</button></aside>
+        <section class="content">
+          <div class="content-head"><div><p class="crumb">NovaGit / <strong id="view-label">Files</strong></p><h2 id="file-title">Program.cs</h2></div><div class="content-actions"><button class="ghost">⌕ Find</button><button class="ghost" id="copy-button">Copy</button></div></div>
+          <div class="file-tabs"><button class="file-tab active" data-file="program">Program.cs</button><button class="file-tab" data-file="form">GitMainForm.cs</button><button class="file-tab" data-file="readme">README.md</button></div>
+          <div class="code-wrap" id="code-panel"><ol class="code" id="code-lines"></ol></div>
+          <div class="changes-panel hidden" id="changes-panel"><div class="change-summary"><strong>2 changes</strong><span>Working tree</span></div><article><span class="status modified">M</span><div><strong>GitMainForm.cs</strong><small>Source preview and remote menu</small></div><button class="small-button" data-diff="form">View diff</button></article><article><span class="status added">A</span><div><strong>GitCli.cs</strong><small>CLI companion commands</small></div><button class="small-button" data-diff="cli">View diff</button></article></div>
+          <div class="commits-panel hidden" id="commits-panel"><article><span class="commit-dot"></span><div><strong>Add GitHub remote workflow</strong><small>Jatin Kaushik · 2 minutes ago</small></div><code>9f1a2d7</code></article><article><span class="commit-dot"></span><div><strong>Improve source viewer</strong><small>Jatin Kaushik · 1 hour ago</small></div><code>7d73c81</code></article><article><span class="commit-dot"></span><div><strong>Initial NovaGit desktop client</strong><small>Jatin Kaushik · yesterday</small></div><code>2a41f0b</code></article></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="features reveal" id="about"><div><p class="eyebrow">About NovaGit</p><h2>Everything you need<br>to understand a repository.</h2></div><div class="feature-grid"><article><span>01</span><h3>See the real source</h3><p>Browse files, preview syntax-highlighted code, and inspect blobs without leaving your workspace.</p></article><article><span>02</span><h3>Review every change</h3><p>Read clean, readable diffs before you stage, commit, merge, pull, or push.</p></article><article><span>03</span><h3>Work with any remote</h3><p>Connect GitHub or another Git host, then fetch, pull, and push from one place.</p></article></div></section>
+
+    <section class="download" id="download"><p class="eyebrow">Ready when you are</p><h2>Build better history.</h2><p>Download NovaGit for Windows and bring your repositories into focus.</p><a class="button light" href="../artifacts/installer/NovaGit-Setup-1.0.0.exe">Download NovaGit Setup <span>↓</span></a></section>
+    <section class="tips reveal" id="tips"><div class="section-heading"><p class="eyebrow">Developer tips</p><h2>Write less noise.<br>Build more value.</h2></div><div class="tip-grid"><article class="tip-card featured"><span class="tip-index">01</span><blockquote>It’s not about lines of code, it’s about how your code works.</blockquote><p>— Jatin Kaushik</p></article><article class="tip-card"><span class="tip-index">02</span><h3>Dennis Ritchie</h3><p>Prefer simple tools and clear abstractions. Durable software comes from making the important parts easy to understand.</p><small>Engineering takeaway inspired by Ritchie’s work on C and Unix.</small></article><article class="tip-card"><span class="tip-index">03</span><h3>Linus Torvalds</h3><p>Keep collaboration practical: make changes reviewable, history useful, and version control part of the daily workflow.</p><small>Engineering takeaway inspired by Torvalds’ work on Git and Linux.</small></article></div></section>
+    <section class="faq reveal" id="faq"><div class="section-heading"><p class="eyebrow">FAQ</p><h2>Questions, answered.</h2></div><div class="faq-list"><details open><summary>What is NovaGit?</summary><p>NovaGit is a Windows desktop client built around real Git repositories. It helps you browse files, review diffs, manage branches, inspect objects, and work with remotes.</p></details><details><summary>Does NovaGit use real Git?</summary><p>Yes. NovaGit invokes the installed Git executable, so your commits, objects, remotes, and history stay compatible with Git.</p></details><details><summary>Can I use GitHub with NovaGit?</summary><p>Yes. Add your repository URL through the Remote menu, then fetch, pull, and push.</p></details><details><summary>Where can I download it?</summary><p>Use the Download section above to get the Windows setup program.</p></details></div></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">N</span><span>NovaGit</span></a><p>Made for developers who care about the history.</p><span>© 2026 Jatin Kaushik</span></footer>
+  <div class="toast" id="toast" role="status">Copied to clipboard</div>
+  <script src="app.js"></script>
+</body>
+</html>
